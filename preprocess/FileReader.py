@@ -102,7 +102,7 @@ class FileReader:
 
 
     def wirte_file(self,filename,target):#全部实体集合
-        file=open(filename,'w',encoding='utf-8')
+        file=open('./resource/'+filename,'w',encoding='utf-8')
         for i in range(len(target)):
             for j in range(len(target[i])):
                 file.writelines(target[i][j][0]+'\t'+target[i][j][1]+'\t'+target[i][j][2])
